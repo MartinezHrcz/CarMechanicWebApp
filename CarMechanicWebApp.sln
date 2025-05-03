@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MechanicAPI", "MechanicAPI\MechanicAPI.csproj", "{A79A7439-64E0-4C35-A731-1F157168753E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebASM", "WebASM\WebASM.csproj", "{36AE6528-E751-4168-BBE0-3BF368F3C952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A79A7439-64E0-4C35-A731-1F157168753E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A79A7439-64E0-4C35-A731-1F157168753E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A79A7439-64E0-4C35-A731-1F157168753E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A79A7439-64E0-4C35-A731-1F157168753E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36AE6528-E751-4168-BBE0-3BF368F3C952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36AE6528-E751-4168-BBE0-3BF368F3C952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36AE6528-E751-4168-BBE0-3BF368F3C952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36AE6528-E751-4168-BBE0-3BF368F3C952}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
