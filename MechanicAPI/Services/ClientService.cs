@@ -3,30 +3,37 @@ using MechanicAPI.Interfaces;
 
 namespace MechanicAPI.Services;
 
-public class ClientService: IClientService
+public class ClientService(ILogger<ClientService> logger) : IClientService
 {
+    private readonly List<Client> clients = [];
+
     public void Add(Client client)
     {
-        throw new NotImplementedException();
+        clients.Add(client);
+        logger.LogInformation($"Client added: {client}");
     }
 
     public void Remove(string id)
     {
-        throw new NotImplementedException();
+        clients.RemoveAll(c => c.Id == id);
+        logger.LogInformation($"Client removed: {id}");
     }
 
-    public void Update(Client client)
+    public void Update(Client updateClient)
     {
-        throw new NotImplementedException();
+        Client old = Get(updateClient.Id);
+        old.Name = updateClient.Name;
+        old.Email = updateClient.Email;
+        old.Address = updateClient.Address;
     }
 
     public Client Get(string id)
     {
-        throw new NotImplementedException();
+        return clients.Find(c => c.Id == id);
     }
 
     public List<Client> GetAll()
     {
-        throw new NotImplementedException();
+        return clients;
     }
 }
