@@ -19,7 +19,7 @@ public class Client
     [EmailAddress]
     private string email;
     public string Email { get => email; set => email = value; }
-    
+    [Required]
     private string address;
     public string Address { get => address; set => address = value; }
     

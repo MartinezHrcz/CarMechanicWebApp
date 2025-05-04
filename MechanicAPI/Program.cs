@@ -1,4 +1,6 @@
 using MechanicAPI.DB;
+using MechanicAPI.Interfaces;
+using MechanicAPI.Services;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -17,8 +19,8 @@ public class Program
         builder.Services.AddDbContext<MechanicDataContext>(
             options =>
             {
-                options.UseSqlite(builder.Configuration.GetConnectionString("SQLLiteConnection"));
-                options.UseLazyLoadingProxies();
+                options.UseSqlite(builder.Configuration.GetConnectionString("SQLite"));
+               // options.UseLazyLoadingProxies();
             });
         
         builder.Services.AddSerilog(
@@ -26,15 +28,22 @@ public class Program
                 .MinimumLevel.Information()
                 .WriteTo.Console());
         
-        //Singleton
+        builder.Services.AddSingleton<IClientService, ClientService>();
+        builder.Services.AddSingleton<IWorkService, WorkService>();
+
+        var app = builder.Build();
         
-        //build
+        if (app.Environment.IsDevelopment())
+        {
+            app.UseSwagger();
+            app.UseSwaggerUI();
+        }
         
-        //if is development use swagger and ui
+        app.UseHttpsRedirection();
         
-        //app. usehttpsRedirection
-        // ap.MapControllers
-        //app.run
+        app.MapControllers();
         
+        app.Run();
+
     }
 }

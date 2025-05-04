@@ -1,6 +1,6 @@
 @MechanicAPI_HostAddress = http://localhost:5218
 
-GET {{MechanicAPI_HostAddress}}/weatherforecast/
+GET {{MechanicAPI_HostAddress}}/mechanic/
 Accept: application/json
 
 ###
