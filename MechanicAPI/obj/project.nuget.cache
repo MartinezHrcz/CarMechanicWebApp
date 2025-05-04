@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4ZXJI80RUs0=",
+  "dgSpecHash": "j6dUc/gSMwg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebApp\\MechanicAPI\\MechanicAPI.csproj",
+  "projectFilePath": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\MechanicAPI\\MechanicAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hercz\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\hercz\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.4\\microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
