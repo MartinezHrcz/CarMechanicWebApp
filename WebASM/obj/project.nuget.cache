@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Apgjdofl1GE=",
+  "dgSpecHash": "hJhMa8XpEnI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\WebASM.csproj",
+  "projectFilePath": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebApp\\WebASM\\WebASM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hercz\\.nuget\\packages\\microsoft.aspnetcore.authorization\\9.0.4\\microsoft.aspnetcore.authorization.9.0.4.nupkg.sha512",
     "C:\\Users\\hercz\\.nuget\\packages\\microsoft.aspnetcore.components\\9.0.4\\microsoft.aspnetcore.components.9.0.4.nupkg.sha512",
