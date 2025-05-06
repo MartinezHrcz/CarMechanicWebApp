@@ -1,17 +1,14 @@
 using MechanicAPI.Classes;
+using MechanicAPI.DB;
 using MechanicAPI.Interfaces;
 
 namespace MechanicAPI.Services;
 
 public class ClientService(ILogger<ClientService> logger) : IClientService
 {
-    private readonly List<Client> clients = [];
+    private readonly ILogger<ClientService> logger;
+    private readonly List<Client> clients;
 
-    /**
-     * Todo:
-     * -change this to data base context !!!!!!!
-     */
-    
     public void Add(Client client)
     {
         clients.Add(client);
