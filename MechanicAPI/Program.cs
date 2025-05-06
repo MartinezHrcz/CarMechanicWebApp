@@ -29,7 +29,7 @@ public class Program
                 .WriteTo.Console());
 
         builder.Services.AddSingleton<IClientService, ClientService>();
-        //builder.Services.AddSingleton<IWorkService, WorkService>();
+        builder.Services.AddSingleton<IWorkService, WorkService>();
 
 
         var app = builder.Build();
