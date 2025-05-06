@@ -1,4 +1,4 @@
-@MechanicAPI_HostAddress = http://localhost:5218
+@MechanicAPI_HostAddress = https://localhost:5001
 
 GET {{MechanicAPI_HostAddress}}/mechanic/
 Accept: application/json

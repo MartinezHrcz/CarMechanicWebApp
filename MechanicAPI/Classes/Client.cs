@@ -12,6 +12,7 @@ public class Client
     public string Id { get => id; set => id = value; }
     
     [Required]
+    [MaxLength(50)]
     private string name;
     public string Name { get => name; set => name = value; }
     

@@ -10,9 +10,11 @@ public class Work
     private string id;
     public string Id { get => id; set => id = value; }
 
+    [Required]
     private string clientId;
     public string ClientId { get => clientId; set => clientId = value; }
     
+    [Required]
     private string licensePlate;
     public string LicensePlate { get => licensePlate; set => licensePlate = value; }
     

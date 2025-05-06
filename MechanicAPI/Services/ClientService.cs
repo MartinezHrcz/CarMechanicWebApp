@@ -7,6 +7,11 @@ public class ClientService(ILogger<ClientService> logger) : IClientService
 {
     private readonly List<Client> clients = [];
 
+    /**
+     * Todo:
+     * -change this to data base context !!!!!!!
+     */
+    
     public void Add(Client client)
     {
         clients.Add(client);
