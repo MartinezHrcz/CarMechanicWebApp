@@ -18,7 +18,6 @@ public class WorkService(ILogger<WorkService> logger) : IWorkService
     {
         Work old = worklist.Find(w => w.Id == updateWork.Id);
         
-        old.ClientId = updateWork.ClientId;
         old.Severity = updateWork.Severity;
         old.ShortDescription = updateWork.ShortDescription;
         old.LicensePlate = updateWork.LicensePlate;

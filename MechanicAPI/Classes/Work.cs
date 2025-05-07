@@ -1,5 +1,8 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.Runtime.CompilerServices;
+using System.Text.Json.Serialization;
+
 
 namespace MechanicAPI.Classes;
 
@@ -8,12 +11,16 @@ public class Work
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     private string id;
-    public string Id { get => id; set => id = value; }
+    public string Id
+    {
+        get => id;
+        set => id = value;
+    }
+    [JsonIgnore]
+    [ForeignKey(nameof(clientFK))] public Client? Client { get; set; }
 
-    [Required]
-    private string clientId;
-    public string ClientId { get => clientId; set => clientId = value; }
-    
+    public string clientFK { get; set; }
+
     [Required]
     private string licensePlate;
     public string LicensePlate { get => licensePlate; set => licensePlate = value; }

@@ -13,7 +13,7 @@ public class MechanicDataContext : DbContext
     }
     
     public virtual DbSet<Client> Clients { get; set; }
-    public virtual DbSet<Work> Works { get; set; }
+    public virtual DbSet<Work> Works { get; set; } = null!;
 
 
 }

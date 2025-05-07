@@ -20,7 +20,7 @@ public class Program
             options =>
             {
                 options.UseSqlite(builder.Configuration.GetConnectionString("SQLite"));
-                options.UseLazyLoadingProxies();
+                //options.UseLazyLoadingProxies();
             });
         
         builder.Services.AddSerilog(
@@ -30,6 +30,7 @@ public class Program
 
         builder.Services.AddSingleton<IClientService, ClientService>();
         builder.Services.AddSingleton<IWorkService, WorkService>();
+
 
 
         var app = builder.Build();

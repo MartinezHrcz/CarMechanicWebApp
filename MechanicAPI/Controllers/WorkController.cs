@@ -34,7 +34,7 @@ public class WorkController :ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<Client>> Update(string id, [FromBody] Work value)
+    public async Task<ActionResult<Work>> Update(string id, [FromBody] Work value)
     {
         if (!value.Id.Equals(id))
         {
@@ -52,7 +52,6 @@ public class WorkController :ControllerBase
         work_OLD.ShortDescription = value.ShortDescription;
         work_OLD.LicensePlate = value.LicensePlate;
         work_OLD.ProductionDate = value.ProductionDate;
-        work_OLD.ClientId = value.ClientId;
         work_OLD.Severity = value.Severity;
         
         _context.Works.Update(work_OLD);
