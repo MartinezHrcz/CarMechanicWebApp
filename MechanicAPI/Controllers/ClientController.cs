@@ -34,7 +34,7 @@ public class ClientController : ControllerBase
     [HttpPut("{id}")]
     public async Task<ActionResult<Client>> Update(string id, [FromBody] Client client)
     {
-        if (!client.Id.Equals(id))
+        if (!client.id.Equals(id))
         {
             return BadRequest();
         }

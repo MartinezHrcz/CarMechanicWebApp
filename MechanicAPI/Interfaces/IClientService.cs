@@ -5,8 +5,8 @@ namespace MechanicAPI.Interfaces;
 public interface IClientService
 {
     void Add(Client client);
-    void Remove(string id);
+    void Remove(int id);
     void Update(Client client);
-    Client Get(string id);
+    Client Get(int id);
     List<Client> GetAll();
 }

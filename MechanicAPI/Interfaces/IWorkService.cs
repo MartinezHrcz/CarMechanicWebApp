@@ -6,7 +6,7 @@ public interface IWorkService
 {
     void Add(Work work);
     void Update(Work work);
-    void Delete(string id);
-    Work Get(string id);
+    void Delete(int id);
+    Work Get(int id);
     List<Work> GetAll();
 }

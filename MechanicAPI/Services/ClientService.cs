@@ -15,23 +15,23 @@ public class ClientService(ILogger<ClientService> logger) : IClientService
         logger.LogInformation($"Client added: {client}");
     }
 
-    public void Remove(string id)
+    public void Remove(int _id)
     {
-        clients.RemoveAll(c => c.Id == id);
-        logger.LogInformation($"Client removed: {id}");
+        clients.RemoveAll(c => c.id == _id);
+        logger.LogInformation($"Client removed: {_id}");
     }
 
     public void Update(Client updateClient)
     {
-        Client old = Get(updateClient.Id);
+        Client old = Get(updateClient.id);
         old.Name = updateClient.Name;
         old.Email = updateClient.Email;
         old.Address = updateClient.Address;
     }
 
-    public Client Get(string id)
+    public Client Get(int _id)
     {
-        return clients.Find(c => c.Id == id);
+        return clients.Find(c => c.id == _id);
     }
 
     public List<Client> GetAll()

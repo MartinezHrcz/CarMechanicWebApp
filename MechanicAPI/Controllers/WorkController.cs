@@ -34,7 +34,7 @@ public class WorkController :ControllerBase
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<Work>> Update(string id, [FromBody] Work value)
+    public async Task<ActionResult<Work>> Update(int id, [FromBody] Work value)
     {
         if (!value.Id.Equals(id))
         {
@@ -61,7 +61,7 @@ public class WorkController :ControllerBase
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult<Work>> Delete(string id)
+    public async Task<ActionResult<Work>> Delete(int id)
     {
         var work = await _context.Works.FindAsync(id);
         if (work is null)

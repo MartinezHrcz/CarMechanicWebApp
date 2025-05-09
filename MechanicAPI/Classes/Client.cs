@@ -1,16 +1,18 @@
 using System.CodeDom.Compiler;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
+using SQLitePCL;
 
 namespace MechanicAPI.Classes;
 
 public class Client
 {
+    [JsonIgnore]
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-    private string id;
-    public string Id { get => id; set => id = value; }
-    
+    public int id { get; set; }
+
     [Required]
     [MaxLength(50)]
     private string name;
@@ -20,6 +22,7 @@ public class Client
     [EmailAddress]
     private string email;
     public string Email { get => email; set => email = value; }
+    
     [Required]
     private string address;
     public string Address { get => address; set => address = value; }

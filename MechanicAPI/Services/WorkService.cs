@@ -26,13 +26,13 @@ public class WorkService(ILogger<WorkService> logger) : IWorkService
         logger.LogInformation($"Updating work: from: {old}  to: {updateWork}");
     }
 
-    public void Delete(string id)
+    public void Delete(int id)
     {
         worklist.RemoveAll(w => w.Id == id);
         logger.LogInformation($"Deleting work: {id}");
     }
 
-    public Work Get(string id)
+    public Work Get(int id)
     {
         return worklist.Find(w => w.Id == id);
     }
