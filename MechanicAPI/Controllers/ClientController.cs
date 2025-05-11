@@ -10,73 +10,54 @@ namespace MechanicAPI.Controllers;
 [Route("Client")]
 public class ClientController : ControllerBase
 {
-    private readonly MechanicDataContext _context;
-    public ClientController(MechanicDataContext context)
+    private readonly ClientService _clientService;
+    public ClientController(ClientService clientService)
     {
-        _context = context;
+        _clientService = clientService;
     }
 
     [HttpGet]
     public async Task<ActionResult<List<Client>>> GetAll()
     {
-        var clients = await _context.Clients.ToListAsync();
+        var clients = await _clientService.GetAll();
         return Ok(clients);
     }
 
     [HttpPost]
     public async Task<ActionResult<Client>> Add([FromBody] Client client)
     {
-        _context.Clients.Add(client);
-        await _context.SaveChangesAsync();
+        await _clientService.Add(client);
         return Ok();
     }
 
     [HttpPut("{id}")]
-    public async Task<ActionResult<Client>> Update(string id, [FromBody] Client client)
+    public async Task<ActionResult<Client>> Update(int id, [FromBody] Client client)
     {
-        if (!client.id.Equals(id))
+        bool result = await _clientService.Update(id, client);
+        if (!result)
         {
             return BadRequest();
         }
-        
-        var client_OLD= await _context.Clients.FindAsync(id);
-        
-        if (client_OLD is null)
-        {
-            return NotFound();
-        }
-        
-        client_OLD.Name = client.Name;
-        client_OLD.Email = client.Email;
-        client_OLD.Address = client.Address;
-        
-        _context.Clients.Update(client_OLD);
-        await _context.SaveChangesAsync();
         
         return Ok();
     }
 
     [HttpDelete("{id}")]
-    public async Task<ActionResult<Client>> Delete(string id)
+    public async Task<ActionResult<Client>> Delete(int id)
     {
-        var client = await _context.Clients.FindAsync(id);
-        if (client is null)
+        var client = await _clientService.Get(id);
+        if (client.Equals(null))
         {
             return NotFound();
         }
-        _context.Clients.Remove(client);
-        await _context.SaveChangesAsync();
+        await _clientService.Remove(id);
         return Ok();
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Client>> Get(string id)
+    public async Task<ActionResult<Client>> Get(int id)
     {
-        var client = await _context.Clients.FindAsync(id);
-        if (client is null)
-        {
-            return NotFound();
-        }
+        var client = _clientService.Get(id);
         return Ok(client);
         
     }

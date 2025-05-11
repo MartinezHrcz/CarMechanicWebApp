@@ -1,12 +1,13 @@
 using MechanicAPI.Classes;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MechanicAPI.Interfaces;
 
 public interface IClientService
 {
-    void Add(Client client);
-    void Remove(int id);
-    void Update(Client client);
-    Client Get(int id);
-    List<Client> GetAll();
+    Task<ActionResult<Client>> Add(Client client);
+    Task<ActionResult<bool>> Remove(int id);
+    Task<bool> Update(int id,Client client);
+    Task<Client> Get(int id);
+    Task<ActionResult<List<Client>>> GetAll();
 }

@@ -28,9 +28,9 @@ public class Program
                 .MinimumLevel.Information()
                 .WriteTo.Console());
 
-        builder.Services.AddSingleton<IClientService, ClientService>();
-        builder.Services.AddSingleton<IWorkService, WorkService>();
-
+        builder.Services.AddScoped<IClientService, ClientService>();
+        builder.Services.AddScoped<IWorkService, WorkService>();
+        
 
 
         var app = builder.Build();
