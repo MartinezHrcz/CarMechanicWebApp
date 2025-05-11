@@ -1,44 +1,71 @@
 using MechanicAPI.Classes;
+using MechanicAPI.DB;
 using MechanicAPI.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SQLitePCL;
 
 namespace MechanicAPI.Services;
 
-public class WorkService(ILogger<WorkService> logger) : IWorkService
+public class WorkService : IWorkService
 {
-    private readonly List<Work> worklist =[];
-    private readonly ILogger<WorkService> logger;
+    private readonly ILogger<IWorkService> _logger;
+    private readonly MechanicDataContext _context;
 
-    public void Add(Work work)
+    public WorkService(ILogger<IWorkService> logger, MechanicDataContext context)
     {
-        worklist.Add(work);
-        logger.LogInformation($"Adding work {work}");
+        _logger = logger;
+        _context = context;
     }
 
-    public void Update(Work updateWork)
+    public async Task<ActionResult<Work>> Add(Work work)
     {
-        Work old = worklist.Find(w => w.Id == updateWork.Id);
+        _context.Works.Add(work);
+        await _context.SaveChangesAsync();
+        _logger.LogInformation($"Work added {work}");
+        return work;
+    }
+
+    public async Task<bool> Update(int id, Work updateWork)
+    {
+        var old = await _context.Works.FindAsync(id);
         
+        if (old is null)
+        {
+            return false;
+        }
+
         old.Severity = updateWork.Severity;
         old.ShortDescription = updateWork.ShortDescription;
         old.LicensePlate = updateWork.LicensePlate;
         old.ProductionDate = updateWork.ProductionDate;
         old.WorkCategory = updateWork.WorkCategory;
-        logger.LogInformation($"Updating work: from: {old}  to: {updateWork}");
+        await _context.SaveChangesAsync();
+        _logger.LogInformation($"Updating work: from: {old}  to: {updateWork}");
+        return true;
     }
 
-    public void Delete(int id)
+    public async Task<ActionResult<bool>> Delete(int id)
     {
-        worklist.RemoveAll(w => w.Id == id);
-        logger.LogInformation($"Deleting work: {id}");
+        var work = await _context.Works.FindAsync(id);
+        if (work is null)
+        {
+            return false;
+        }
+        _context.Works.Remove(work);
+        await _context.SaveChangesAsync();
+        _logger.LogInformation($"Work deleted {work}");
+        return true;
     }
 
-    public Work Get(int id)
+    public async Task<Work> Get(int id)
     {
-        return worklist.Find(w => w.Id == id);
+        return (await _context.Works.FindAsync(id))!;
+        
     }
 
-    public List<Work> GetAll()
+    public async Task<ActionResult<List<Work>>> GetAll()
     {
-        return worklist;
+        return await _context.Works.ToListAsync();
     }
 }

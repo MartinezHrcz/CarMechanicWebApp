@@ -40,7 +40,7 @@ public class ClientService : IClientService
 
     public async Task<bool> Update(int _id,Client updateClient)
     {
-        var old = _context.Clients.FindAsync(updateClient);;
+        var old = await _context.Clients.FindAsync(updateClient);
         if (old.Equals(null))
         {
             return false;
@@ -50,17 +50,17 @@ public class ClientService : IClientService
         {
             return false;
         }
-        old.Result.Name = updateClient.Name;
-        old.Result.Email = updateClient.Email;
-        old.Result.Address = updateClient.Address;
-        _context.SaveChanges();
+        old.Name = updateClient.Name;
+        old.Email = updateClient.Email;
+        old.Address = updateClient.Address;
+        await _context.SaveChangesAsync();
         logger.LogInformation($"Client updated: {updateClient}");
         return true;
     }
 
     public async Task<Client> Get(int _id)
     {
-        return await _context.Clients.FindAsync(_id);
+        return (await _context.Clients.FindAsync(_id))!;
     }
 
     public async Task<ActionResult<List<Client>>> GetAll()
