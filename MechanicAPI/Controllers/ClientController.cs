@@ -10,10 +10,10 @@ namespace MechanicAPI.Controllers;
 [Route("Client")]
 public class ClientController : ControllerBase
 {
-    private readonly ClientService _clientService;
-    public ClientController(ClientService clientService)
+    private readonly IClientService _clientService;
+    public ClientController(IClientService clientService)
     {
-        _clientService = clientService;
+        _clientService = clientService ;
     }
 
     [HttpGet]
