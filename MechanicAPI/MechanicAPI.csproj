@@ -22,5 +22,11 @@
     <ItemGroup>
       <Content Include="obj\rider.project.model.nuget.info" />
     </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Mechanic.Shared\Mechanic.Shared.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+      <Folder Include="Classes\" />
+    </ItemGroup>
 
 </Project>

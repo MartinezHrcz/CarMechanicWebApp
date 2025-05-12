@@ -1,4 +1,4 @@
-using MechanicAPI.Classes;
+using Mechanic.Shared.Modells;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
 

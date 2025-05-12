@@ -1,11 +1,8 @@
-using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices.JavaScript;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-
-namespace MechanicAPI.Classes;
+namespace Mechanic.Shared.Modells;
 
 public class Work
 {

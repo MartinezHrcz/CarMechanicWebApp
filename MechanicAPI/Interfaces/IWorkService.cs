@@ -1,4 +1,4 @@
-using MechanicAPI.Classes;
+using Mechanic.Shared.Modells;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MechanicAPI.Interfaces;

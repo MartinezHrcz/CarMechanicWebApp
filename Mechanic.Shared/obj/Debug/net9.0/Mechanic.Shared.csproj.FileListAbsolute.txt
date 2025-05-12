@@ -1,0 +1,13 @@
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\bin\Debug\net9.0\Mechanic.Shared.deps.json
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\bin\Debug\net9.0\Mechanic.Shared.dll
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\bin\Debug\net9.0\Mechanic.Shared.pdb
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\obj\Debug\net9.0\Mechanic.Shared.csproj.AssemblyReference.cache
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\obj\Debug\net9.0\Mechanic.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\obj\Debug\net9.0\Mechanic.Shared.AssemblyInfoInputs.cache
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\obj\Debug\net9.0\Mechanic.Shared.AssemblyInfo.cs
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\obj\Debug\net9.0\Mechanic.Shared.csproj.CoreCompileInputs.cache
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\obj\Debug\net9.0\Mechanic.Shared.sourcelink.json
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\obj\Debug\net9.0\Mechanic.Shared.dll
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\obj\Debug\net9.0\refint\Mechanic.Shared.dll
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\obj\Debug\net9.0\Mechanic.Shared.pdb
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\Mechanic.Shared\obj\Debug\net9.0\ref\Mechanic.Shared.dll
