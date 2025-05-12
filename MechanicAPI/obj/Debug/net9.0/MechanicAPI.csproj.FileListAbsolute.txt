@@ -168,3 +168,5 @@ C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\MechanicAPI\obj\Debug\net9.0\r
 C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\MechanicAPI\obj\Debug\net9.0\MechanicAPI.pdb
 C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\MechanicAPI\obj\Debug\net9.0\MechanicAPI.genruntimeconfig.cache
 C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\MechanicAPI\obj\Debug\net9.0\ref\MechanicAPI.dll
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\MechanicAPI\bin\Debug\net9.0\Mechanic.Shared.dll
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\MechanicAPI\bin\Debug\net9.0\Mechanic.Shared.pdb

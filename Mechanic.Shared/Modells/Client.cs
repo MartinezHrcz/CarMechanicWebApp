@@ -1,10 +1,8 @@
-using System.CodeDom.Compiler;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
-using SQLitePCL;
 
-namespace MechanicAPI.Classes;
+namespace Mechanic.Shared.Modells;
 
 public class Client
 {

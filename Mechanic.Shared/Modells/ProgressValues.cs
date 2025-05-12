@@ -1,4 +1,4 @@
-namespace MechanicAPI.Classes;
+namespace Mechanic.Shared.Modells;
 
 public enum ProgressValues
 {
