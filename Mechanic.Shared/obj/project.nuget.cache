@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "xSEYTE6HQiE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\Mechanic.Shared\\Mechanic.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hercz\\.nuget\\packages\\sqlitepclraw.core\\2.1.11\\sqlitepclraw.core.2.1.11.nupkg.sha512",
+    "C:\\Users\\hercz\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
+  ],
+  "logs": []
+}
