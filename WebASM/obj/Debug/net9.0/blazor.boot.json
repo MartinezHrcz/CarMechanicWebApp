@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "WebASM",
   "resources": {
-    "hash": "sha256-ttSV+5CWoaA193lg6vkRUa8nFHoPZY0Ol3t6DuVJOIo=",
+    "hash": "sha256-X9PdUt8Ns75/s88YSnrAhsBAK4l0Zf00V4K4QmP3F9w=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.gf26ou9jj9.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.v3fd2n5hlr.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -201,8 +201,8 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "WebASM.tym4f1ytiv.wasm": "WebASM.wasm",
-      "WebASM.ao4qrbkwfq.pdb": "WebASM.pdb"
+      "WebASM.j6xp7wwrns.wasm": "WebASM.wasm",
+      "WebASM.7zl7g6w3rv.pdb": "WebASM.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.8bti36lthm.js": "sha256-HFADmT26AarHu4tMjFaTPxINmQjBJGtdPN+CKjtNMFE="
@@ -412,10 +412,10 @@
       "WindowsBase.tuf34ieu7y.wasm": "sha256-Bd+l972cOS1eVeLzrQNlgD6LPWV1QXBSzJhv8Tx1WGI=",
       "mscorlib.5q5u0swn6q.wasm": "sha256-g9cI1sECkF7bxMqOSB+W0a4utdDsqTrqZzyiAEeA65g=",
       "netstandard.w8gk1pigg1.wasm": "sha256-QFR5QNPfvyZTexW3IA/AFx6ZmIF/TecvOUsSK4gM4po=",
-      "WebASM.tym4f1ytiv.wasm": "sha256-RcC5SVQkhdcLXTm93oPGnXePfJdtKCg8g9y8Gt2Qc+E="
+      "WebASM.j6xp7wwrns.wasm": "sha256-Oxv0f8L/8XNZlNa7ScOyOrCeFV+MDz0hAUg1muP0mUs="
     },
     "pdb": {
-      "WebASM.ao4qrbkwfq.pdb": "sha256-1h743uRGLPnq2YPttQlt3Fh+vrmRe0ZxyhIW4lAcPjk="
+      "WebASM.7zl7g6w3rv.pdb": "sha256-/eysYkXMH8CJo2RFfGAGIna2cLqHjyd+zcTik0zv6Vc="
     }
   },
   "cacheBootResources": true,

@@ -28,8 +28,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/ClientPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/SubPages/WorkAdd.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViUGFnZXNcV29ya0FkZC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/WorkPage.razor]

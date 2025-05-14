@@ -1075,10 +1075,10 @@ C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\obj\Debug\net9.0\WebASM
 C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\obj\Debug\net9.0\refint\WebASM.dll
 C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\obj\Debug\net9.0\WebASM.pdb
 C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\obj\Debug\net9.0\ref\WebASM.dll
-C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\bin\Debug\net9.0\wwwroot\_framework\WebASM.ao4qrbkwfq.pdb
-C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\bin\Debug\net9.0\wwwroot\_framework\WebASM.tym4f1ytiv.wasm
-C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\bin\Debug\net9.0\wwwroot\_framework\WebASM.ao4qrbkwfq.pdb.gz
-C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\bin\Debug\net9.0\wwwroot\_framework\WebASM.tym4f1ytiv.wasm.gz
-C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\obj\Debug\net9.0\compressed\u2h556oebm-tym4f1ytiv.gz
-C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\obj\Debug\net9.0\compressed\s2thtq18lf-ao4qrbkwfq.gz
-C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\obj\Debug\net9.0\compressed\m46rm6xk87-8zn9vcsuhh.gz
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\bin\Debug\net9.0\wwwroot\_framework\WebASM.7zl7g6w3rv.pdb
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\bin\Debug\net9.0\wwwroot\_framework\WebASM.j6xp7wwrns.wasm
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\bin\Debug\net9.0\wwwroot\_framework\WebASM.7zl7g6w3rv.pdb.gz
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\bin\Debug\net9.0\wwwroot\_framework\WebASM.j6xp7wwrns.wasm.gz
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\obj\Debug\net9.0\compressed\u2h556oebm-j6xp7wwrns.gz
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\obj\Debug\net9.0\compressed\s2thtq18lf-7zl7g6w3rv.gz
+C:\Users\hercz\RiderProjects\CarMechanicWebAppNew\WebASM\obj\Debug\net9.0\compressed\m46rm6xk87-cpp3niiogt.gz

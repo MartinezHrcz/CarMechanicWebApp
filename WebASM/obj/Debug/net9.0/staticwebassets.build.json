@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2PK/U024qIXs01ug1r8Ag62yAygf1pJ+P2nOj7FW8CI=",
+  "Hash": "ubdOYK7UyNfUXRuTppW5K7iYOoi/PgtdorwsQHDba5Q=",
   "Source": "WebASM",
   "BasePath": "/",
   "Mode": "Root",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "8zn9vcsuhh",
-      "Integrity": "XK84daZFB1Sv4WPQVSqdEC6Ge4PRudL27eXVal2Xk60=",
+      "Fingerprint": "cpp3niiogt",
+      "Integrity": "IDx3xOoREi3P6hv7Me54W9SPD7R3ugRiow8g4IM4W80=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\blazor.boot.json"
@@ -4252,8 +4252,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "ao4qrbkwfq",
-      "Integrity": "1h743uRGLPnq2YPttQlt3Fh+vrmRe0ZxyhIW4lAcPjk=",
+      "Fingerprint": "7zl7g6w3rv",
+      "Integrity": "/eysYkXMH8CJo2RFfGAGIna2cLqHjyd+zcTik0zv6Vc=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net9.0\\WebASM.pdb"
@@ -4273,8 +4273,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "tym4f1ytiv",
-      "Integrity": "RcC5SVQkhdcLXTm93oPGnXePfJdtKCg8g9y8Gt2Qc+E=",
+      "Fingerprint": "j6xp7wwrns",
+      "Integrity": "Oxv0f8L/8XNZlNa7ScOyOrCeFV+MDz0hAUg1muP0mUs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\webcil\\WebASM.wasm"
@@ -7682,7 +7682,7 @@
       "OriginalItemSpec": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Diagnostics.Process.wasm"
     },
     {
-      "Identity": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\m46rm6xk87-8zn9vcsuhh.gz",
+      "Identity": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\m46rm6xk87-cpp3niiogt.gz",
       "SourceId": "WebASM",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\",
@@ -7696,8 +7696,8 @@
       "RelatedAsset": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "cizgwe05vt",
-      "Integrity": "PJAwCGwCWai+2m71y9ZMNnjqcArnDtvb4YDxXMSokfo=",
+      "Fingerprint": "9352n1k6jr",
+      "Integrity": "RWGrLHaHA/ZiFGUHh2M5o1bhfoZpTjk1UnuZa0gFMg4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\bin\\Debug\\net9.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -8543,12 +8543,12 @@
       "OriginalItemSpec": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\bin\\Debug\\net9.0\\wwwroot\\_framework\\System.Configuration.wasm"
     },
     {
-      "Identity": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\s2thtq18lf-ao4qrbkwfq.gz",
+      "Identity": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\s2thtq18lf-7zl7g6w3rv.gz",
       "SourceId": "WebASM",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/WebASM#[.{fingerprint=ao4qrbkwfq}]!.pdb.gz",
+      "RelativePath": "_framework/WebASM#[.{fingerprint=7zl7g6w3rv}]!.pdb.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8557,8 +8557,8 @@
       "RelatedAsset": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WebASM.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "fn7nzmn6cd",
-      "Integrity": "e5FrgbXF+jpklbOX3kcFtjqSi9CQeFWZFvInuIQn8PQ=",
+      "Fingerprint": "y9ei400vod",
+      "Integrity": "xly5/V2loqtrq5smHXEkXaMIBGhjty31ynwLY6EtIF4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WebASM.pdb"
@@ -8795,12 +8795,12 @@
       "OriginalItemSpec": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\u2h556oebm-tym4f1ytiv.gz",
+      "Identity": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\u2h556oebm-j6xp7wwrns.gz",
       "SourceId": "WebASM",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "/",
-      "RelativePath": "_framework/WebASM#[.{fingerprint=tym4f1ytiv}]!.wasm.gz",
+      "RelativePath": "_framework/WebASM#[.{fingerprint=j6xp7wwrns}]!.wasm.gz",
       "AssetKind": "Build",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -8809,8 +8809,8 @@
       "RelatedAsset": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WebASM.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9m1h5sqelc",
-      "Integrity": "j6iFysAeoA27BfJcGfVc4RxIM8toGw0jQ1kh1RMYMw0=",
+      "Fingerprint": "dn40o3untc",
+      "Integrity": "ibvfWdykJ4Zlpv9VwBL72F8Sf3Ryp86q7O+nGgy12Io=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WebASM.wasm"
@@ -10705,7 +10705,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"XK84daZFB1Sv4WPQVSqdEC6Ge4PRudL27eXVal2Xk60=\""
+          "Value": "\"IDx3xOoREi3P6hv7Me54W9SPD7R3ugRiow8g4IM4W80=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 19:54:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IDx3xOoREi3P6hv7Me54W9SPD7R3ugRiow8g4IM4W80="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/blazor.boot.json",
+      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\m46rm6xk87-cpp3niiogt.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000081340491"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12293"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RWGrLHaHA/ZiFGUHh2M5o1bhfoZpTjk1UnuZa0gFMg4=\""
         },
         {
           "Name": "Last-Modified",
@@ -10714,45 +10753,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-XK84daZFB1Sv4WPQVSqdEC6Ge4PRudL27eXVal2Xk60="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\m46rm6xk87-8zn9vcsuhh.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000081314035"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12297"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"PJAwCGwCWai+2m71y9ZMNnjqcArnDtvb4YDxXMSokfo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 10:58:02 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -10768,19 +10768,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"XK84daZFB1Sv4WPQVSqdEC6Ge4PRudL27eXVal2Xk60=\""
+          "Value": "W/\"IDx3xOoREi3P6hv7Me54W9SPD7R3ugRiow8g4IM4W80=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-XK84daZFB1Sv4WPQVSqdEC6Ge4PRudL27eXVal2Xk60="
+          "Value": "sha256-IDx3xOoREi3P6hv7Me54W9SPD7R3ugRiow8g4IM4W80="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\m46rm6xk87-8zn9vcsuhh.gz",
+      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\m46rm6xk87-cpp3niiogt.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10789,7 +10789,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12297"
+          "Value": "12293"
         },
         {
           "Name": "Content-Type",
@@ -10797,11 +10797,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PJAwCGwCWai+2m71y9ZMNnjqcArnDtvb4YDxXMSokfo=\""
+          "Value": "\"RWGrLHaHA/ZiFGUHh2M5o1bhfoZpTjk1UnuZa0gFMg4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 10:58:02 GMT"
+          "Value": "Mon, 12 May 2025 11:00:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10819,7 +10819,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PJAwCGwCWai+2m71y9ZMNnjqcArnDtvb4YDxXMSokfo="
+          "Value": "sha256-RWGrLHaHA/ZiFGUHh2M5o1bhfoZpTjk1UnuZa0gFMg4="
         }
       ]
     },
@@ -70263,7 +70263,7 @@
       ]
     },
     {
-      "Route": "_framework/WebASM.ao4qrbkwfq.pdb",
+      "Route": "_framework/WebASM.7zl7g6w3rv.pdb",
       "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WebASM.pdb",
       "Selectors": [],
       "ResponseHeaders": [
@@ -70273,7 +70273,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23656"
+          "Value": "20900"
         },
         {
           "Name": "Content-Type",
@@ -70281,11 +70281,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1h743uRGLPnq2YPttQlt3Fh+vrmRe0ZxyhIW4lAcPjk=\""
+          "Value": "\"/eysYkXMH8CJo2RFfGAGIna2cLqHjyd+zcTik0zv6Vc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:04 GMT"
+          "Value": "Mon, 12 May 2025 19:54:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70295,7 +70295,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ao4qrbkwfq"
+          "Value": "7zl7g6w3rv"
         },
         {
           "Name": "label",
@@ -70303,18 +70303,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1h743uRGLPnq2YPttQlt3Fh+vrmRe0ZxyhIW4lAcPjk="
+          "Value": "sha256-/eysYkXMH8CJo2RFfGAGIna2cLqHjyd+zcTik0zv6Vc="
         }
       ]
     },
     {
-      "Route": "_framework/WebASM.ao4qrbkwfq.pdb",
-      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\s2thtq18lf-ao4qrbkwfq.gz",
+      "Route": "_framework/WebASM.7zl7g6w3rv.pdb",
+      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\s2thtq18lf-7zl7g6w3rv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000058193669"
+          "Quality": "0.000067750678"
         }
       ],
       "ResponseHeaders": [
@@ -70324,15 +70324,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17183"
+          "Value": "14759"
         },
         {
           "Name": "ETag",
-          "Value": "\"e5FrgbXF+jpklbOX3kcFtjqSi9CQeFWZFvInuIQn8PQ=\""
+          "Value": "\"xly5/V2loqtrq5smHXEkXaMIBGhjty31ynwLY6EtIF4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:06 GMT"
+          "Value": "Mon, 12 May 2025 19:54:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70352,13 +70352,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1h743uRGLPnq2YPttQlt3Fh+vrmRe0ZxyhIW4lAcPjk=\""
+          "Value": "W/\"/eysYkXMH8CJo2RFfGAGIna2cLqHjyd+zcTik0zv6Vc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ao4qrbkwfq"
+          "Value": "7zl7g6w3rv"
         },
         {
           "Name": "label",
@@ -70366,13 +70366,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-1h743uRGLPnq2YPttQlt3Fh+vrmRe0ZxyhIW4lAcPjk="
+          "Value": "sha256-/eysYkXMH8CJo2RFfGAGIna2cLqHjyd+zcTik0zv6Vc="
         }
       ]
     },
     {
-      "Route": "_framework/WebASM.ao4qrbkwfq.pdb.gz",
-      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\s2thtq18lf-ao4qrbkwfq.gz",
+      "Route": "_framework/WebASM.7zl7g6w3rv.pdb.gz",
+      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\s2thtq18lf-7zl7g6w3rv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70381,7 +70381,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17183"
+          "Value": "14759"
         },
         {
           "Name": "Content-Type",
@@ -70389,11 +70389,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e5FrgbXF+jpklbOX3kcFtjqSi9CQeFWZFvInuIQn8PQ=\""
+          "Value": "\"xly5/V2loqtrq5smHXEkXaMIBGhjty31ynwLY6EtIF4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:06 GMT"
+          "Value": "Mon, 12 May 2025 19:54:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70411,7 +70411,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "ao4qrbkwfq"
+          "Value": "7zl7g6w3rv"
         },
         {
           "Name": "label",
@@ -70419,7 +70419,168 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-e5FrgbXF+jpklbOX3kcFtjqSi9CQeFWZFvInuIQn8PQ="
+          "Value": "sha256-xly5/V2loqtrq5smHXEkXaMIBGhjty31ynwLY6EtIF4="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/WebASM.j6xp7wwrns.wasm",
+      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WebASM.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13589"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Oxv0f8L/8XNZlNa7ScOyOrCeFV+MDz0hAUg1muP0mUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 19:54:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j6xp7wwrns"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/WebASM.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Oxv0f8L/8XNZlNa7ScOyOrCeFV+MDz0hAUg1muP0mUs="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/WebASM.j6xp7wwrns.wasm",
+      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\u2h556oebm-j6xp7wwrns.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000165700083"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6034"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ibvfWdykJ4Zlpv9VwBL72F8Sf3Ryp86q7O+nGgy12Io=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 19:54:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"Oxv0f8L/8XNZlNa7ScOyOrCeFV+MDz0hAUg1muP0mUs=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j6xp7wwrns"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/WebASM.wasm"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Oxv0f8L/8XNZlNa7ScOyOrCeFV+MDz0hAUg1muP0mUs="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/WebASM.j6xp7wwrns.wasm.gz",
+      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\u2h556oebm-j6xp7wwrns.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6034"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ibvfWdykJ4Zlpv9VwBL72F8Sf3Ryp86q7O+nGgy12Io=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 19:54:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j6xp7wwrns"
+        },
+        {
+          "Name": "label",
+          "Value": "_framework/WebASM.wasm.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ibvfWdykJ4Zlpv9VwBL72F8Sf3Ryp86q7O+nGgy12Io="
         }
       ]
     },
@@ -70434,7 +70595,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "23656"
+          "Value": "20900"
         },
         {
           "Name": "Content-Type",
@@ -70442,11 +70603,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"1h743uRGLPnq2YPttQlt3Fh+vrmRe0ZxyhIW4lAcPjk=\""
+          "Value": "\"/eysYkXMH8CJo2RFfGAGIna2cLqHjyd+zcTik0zv6Vc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:04 GMT"
+          "Value": "Mon, 12 May 2025 19:54:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70456,18 +70617,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1h743uRGLPnq2YPttQlt3Fh+vrmRe0ZxyhIW4lAcPjk="
+          "Value": "sha256-/eysYkXMH8CJo2RFfGAGIna2cLqHjyd+zcTik0zv6Vc="
         }
       ]
     },
     {
       "Route": "_framework/WebASM.pdb",
-      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\s2thtq18lf-ao4qrbkwfq.gz",
+      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\s2thtq18lf-7zl7g6w3rv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000058193669"
+          "Quality": "0.000067750678"
         }
       ],
       "ResponseHeaders": [
@@ -70477,15 +70638,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17183"
+          "Value": "14759"
         },
         {
           "Name": "ETag",
-          "Value": "\"e5FrgbXF+jpklbOX3kcFtjqSi9CQeFWZFvInuIQn8PQ=\""
+          "Value": "\"xly5/V2loqtrq5smHXEkXaMIBGhjty31ynwLY6EtIF4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:06 GMT"
+          "Value": "Mon, 12 May 2025 19:54:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70505,19 +70666,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"1h743uRGLPnq2YPttQlt3Fh+vrmRe0ZxyhIW4lAcPjk=\""
+          "Value": "W/\"/eysYkXMH8CJo2RFfGAGIna2cLqHjyd+zcTik0zv6Vc=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-1h743uRGLPnq2YPttQlt3Fh+vrmRe0ZxyhIW4lAcPjk="
+          "Value": "sha256-/eysYkXMH8CJo2RFfGAGIna2cLqHjyd+zcTik0zv6Vc="
         }
       ]
     },
     {
       "Route": "_framework/WebASM.pdb.gz",
-      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\s2thtq18lf-ao4qrbkwfq.gz",
+      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\s2thtq18lf-7zl7g6w3rv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70526,7 +70687,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17183"
+          "Value": "14759"
         },
         {
           "Name": "Content-Type",
@@ -70534,11 +70695,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"e5FrgbXF+jpklbOX3kcFtjqSi9CQeFWZFvInuIQn8PQ=\""
+          "Value": "\"xly5/V2loqtrq5smHXEkXaMIBGhjty31ynwLY6EtIF4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:06 GMT"
+          "Value": "Mon, 12 May 2025 19:54:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70556,168 +70717,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-e5FrgbXF+jpklbOX3kcFtjqSi9CQeFWZFvInuIQn8PQ="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/WebASM.tym4f1ytiv.wasm",
-      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\bin\\Debug\\net9.0\\wwwroot\\_framework\\WebASM.wasm",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "17685"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"RcC5SVQkhdcLXTm93oPGnXePfJdtKCg8g9y8Gt2Qc+E=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:04 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tym4f1ytiv"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/WebASM.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RcC5SVQkhdcLXTm93oPGnXePfJdtKCg8g9y8Gt2Qc+E="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/WebASM.tym4f1ytiv.wasm",
-      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\u2h556oebm-tym4f1ytiv.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000127844541"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7821"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j6iFysAeoA27BfJcGfVc4RxIM8toGw0jQ1kh1RMYMw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"RcC5SVQkhdcLXTm93oPGnXePfJdtKCg8g9y8Gt2Qc+E=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tym4f1ytiv"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/WebASM.wasm"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-RcC5SVQkhdcLXTm93oPGnXePfJdtKCg8g9y8Gt2Qc+E="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/WebASM.tym4f1ytiv.wasm.gz",
-      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\u2h556oebm-tym4f1ytiv.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "7821"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/wasm"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"j6iFysAeoA27BfJcGfVc4RxIM8toGw0jQ1kh1RMYMw0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "tym4f1ytiv"
-        },
-        {
-          "Name": "label",
-          "Value": "_framework/WebASM.wasm.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-j6iFysAeoA27BfJcGfVc4RxIM8toGw0jQ1kh1RMYMw0="
+          "Value": "sha256-xly5/V2loqtrq5smHXEkXaMIBGhjty31ynwLY6EtIF4="
         }
       ]
     },
@@ -70732,7 +70732,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "17685"
+          "Value": "13589"
         },
         {
           "Name": "Content-Type",
@@ -70740,11 +70740,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RcC5SVQkhdcLXTm93oPGnXePfJdtKCg8g9y8Gt2Qc+E=\""
+          "Value": "\"Oxv0f8L/8XNZlNa7ScOyOrCeFV+MDz0hAUg1muP0mUs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:04 GMT"
+          "Value": "Mon, 12 May 2025 19:54:44 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70754,18 +70754,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RcC5SVQkhdcLXTm93oPGnXePfJdtKCg8g9y8Gt2Qc+E="
+          "Value": "sha256-Oxv0f8L/8XNZlNa7ScOyOrCeFV+MDz0hAUg1muP0mUs="
         }
       ]
     },
     {
       "Route": "_framework/WebASM.wasm",
-      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\u2h556oebm-tym4f1ytiv.gz",
+      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\u2h556oebm-j6xp7wwrns.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000127844541"
+          "Quality": "0.000165700083"
         }
       ],
       "ResponseHeaders": [
@@ -70775,15 +70775,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7821"
+          "Value": "6034"
         },
         {
           "Name": "ETag",
-          "Value": "\"j6iFysAeoA27BfJcGfVc4RxIM8toGw0jQ1kh1RMYMw0=\""
+          "Value": "\"ibvfWdykJ4Zlpv9VwBL72F8Sf3Ryp86q7O+nGgy12Io=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:06 GMT"
+          "Value": "Mon, 12 May 2025 19:54:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70803,19 +70803,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"RcC5SVQkhdcLXTm93oPGnXePfJdtKCg8g9y8Gt2Qc+E=\""
+          "Value": "W/\"Oxv0f8L/8XNZlNa7ScOyOrCeFV+MDz0hAUg1muP0mUs=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RcC5SVQkhdcLXTm93oPGnXePfJdtKCg8g9y8Gt2Qc+E="
+          "Value": "sha256-Oxv0f8L/8XNZlNa7ScOyOrCeFV+MDz0hAUg1muP0mUs="
         }
       ]
     },
     {
       "Route": "_framework/WebASM.wasm.gz",
-      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\u2h556oebm-tym4f1ytiv.gz",
+      "AssetFile": "C:\\Users\\hercz\\RiderProjects\\CarMechanicWebAppNew\\WebASM\\obj\\Debug\\net9.0\\compressed\\u2h556oebm-j6xp7wwrns.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -70824,7 +70824,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7821"
+          "Value": "6034"
         },
         {
           "Name": "Content-Type",
@@ -70832,11 +70832,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6iFysAeoA27BfJcGfVc4RxIM8toGw0jQ1kh1RMYMw0=\""
+          "Value": "\"ibvfWdykJ4Zlpv9VwBL72F8Sf3Ryp86q7O+nGgy12Io=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 11:00:06 GMT"
+          "Value": "Mon, 12 May 2025 19:54:45 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -70854,7 +70854,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6iFysAeoA27BfJcGfVc4RxIM8toGw0jQ1kh1RMYMw0="
+          "Value": "sha256-ibvfWdykJ4Zlpv9VwBL72F8Sf3Ryp86q7O+nGgy12Io="
         }
       ]
     },
