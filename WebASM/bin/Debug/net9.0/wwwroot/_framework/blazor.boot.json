@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "WebASM",
   "resources": {
-    "hash": "sha256-HXGsWWhAZkyl4zlKTusbF/FNtOnbV1f1T3XrQmSE0+I=",
+    "hash": "sha256-wN4JqqDFBkUVG9PRT76rwTnnOlR00w6lx+hT6VOh/UE=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.gf26ou9jj9.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.v3fd2n5hlr.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -202,10 +202,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "Mechanic.Shared.irjlznlw51.wasm": "Mechanic.Shared.wasm",
-      "Mechanic.Shared.m5jdnkald0.pdb": "Mechanic.Shared.pdb",
-      "WebASM.2fi813hkd2.wasm": "WebASM.wasm",
-      "WebASM.4zpaiho4v9.pdb": "WebASM.pdb"
+      "Mechanic.Shared.p2gz5b2zwq.wasm": "Mechanic.Shared.wasm",
+      "Mechanic.Shared.tpna7ftzkn.pdb": "Mechanic.Shared.pdb",
+      "WebASM.e90mnenthz.wasm": "WebASM.wasm",
+      "WebASM.iiytj13tdz.pdb": "WebASM.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.8bti36lthm.js": "sha256-HFADmT26AarHu4tMjFaTPxINmQjBJGtdPN+CKjtNMFE="
@@ -416,12 +416,12 @@
       "WindowsBase.tuf34ieu7y.wasm": "sha256-Bd+l972cOS1eVeLzrQNlgD6LPWV1QXBSzJhv8Tx1WGI=",
       "mscorlib.5q5u0swn6q.wasm": "sha256-g9cI1sECkF7bxMqOSB+W0a4utdDsqTrqZzyiAEeA65g=",
       "netstandard.w8gk1pigg1.wasm": "sha256-QFR5QNPfvyZTexW3IA/AFx6ZmIF/TecvOUsSK4gM4po=",
-      "Mechanic.Shared.irjlznlw51.wasm": "sha256-spkdB88LGOakX9TkBegBkbNCo3OlGI3rd8K10PxZvSA=",
-      "WebASM.2fi813hkd2.wasm": "sha256-wlP+tVGWVdCPd+e/tFgeelX/O/7rdAQtcWBlUER6Pd4="
+      "Mechanic.Shared.p2gz5b2zwq.wasm": "sha256-37I40PWNmL74n2fOu9gAduhekmOcyNmP6GSryzgo268=",
+      "WebASM.e90mnenthz.wasm": "sha256-Ljb5SvBG6XSZj4+fujE+LNPEzPkMAclAj/ShyfFGFb4="
     },
     "pdb": {
-      "Mechanic.Shared.m5jdnkald0.pdb": "sha256-OsnaSztGRzBWKEBHyrmuvqFOb6XfFnMSCHZ3knVde8w=",
-      "WebASM.4zpaiho4v9.pdb": "sha256-AKgQTwiSMZzv8thfaZuBSCmMPHKKP0AwrpJ4uiAGtFw="
+      "Mechanic.Shared.tpna7ftzkn.pdb": "sha256-b9YdzGICNDj6lSi5WmmJIqUFJzW1MQeaRQA9zZpQwL0=",
+      "WebASM.iiytj13tdz.pdb": "sha256-+lrqApxHnsIGv0V+T0jENSf5OPhWufFHO1uKr6SEIBQ="
     }
   },
   "cacheBootResources": true,

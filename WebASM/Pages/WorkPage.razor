@@ -1,6 +1,7 @@
 @page "/WorkPage"
-@using Mechanic.Shared
-
+@inject IWorkService WorkService
+@using Mechanic.Shared.Modells
+@using WebASM.Services
 <h3>WorkPage</h3>
 
 <div class="mb-3">
@@ -24,9 +25,26 @@
     </tr>
     </thead>
     <tbody>
+    @foreach (var work in workList)
+    {
+        <tr>
+            <td>@work.LicensePlate</td>
+            <td>@work.ProductionDate</td>
+            <td>@work.WorkCategory</td>
+            <td>@work.Severity</td>
+            <td>@work.ShortDescription</td>
+        </tr>
+    }
     </tbody>
 </table>
 
 @code {
-    
+
+    private List<Work> workList = new List<Work>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        workList = await WorkService.GetWorksAsync();
+    }
+
 }

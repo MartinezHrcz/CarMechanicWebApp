@@ -31,7 +31,15 @@ public class Program
         builder.Services.AddScoped<IClientService, ClientService>();
         builder.Services.AddScoped<IWorkService, WorkService>();
         
-
+        builder.Services.AddCors(options =>
+        {
+            options.AddPolicy("AllowBlazorApp", policy =>
+            {
+                policy.WithOrigins("http://localhost:5252") // <-- Your Blazor WebAssembly URL
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+            });
+        });
 
         var app = builder.Build();
         
@@ -40,7 +48,7 @@ public class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
-        
+        app.UseCors("AllowBlazorApp");
         app.UseHttpsRedirection();
         
         app.MapControllers();

@@ -64,7 +64,7 @@ public class WorkService : IWorkService
         
     }
 
-    public async Task<ActionResult<List<Work>>> GetAll()
+    public async Task<List<Work>> GetAll()
     {
         return await _context.Works.ToListAsync();
     }
