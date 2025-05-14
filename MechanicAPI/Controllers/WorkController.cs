@@ -64,11 +64,5 @@ public class WorkController :ControllerBase
         return Ok(work);
 
     }
-
-    [HttpPost("{id}")]
-    public async Task<ActionResult<double>> TotalWorkHours(int id)
-    {
-        var result = await _workService.GetTotalWorkHours(id);
-        return Ok(result);
-    }
+    
 }

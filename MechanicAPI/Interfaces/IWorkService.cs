@@ -10,5 +10,4 @@ public interface IWorkService
     Task<ActionResult<bool>> Delete(int id);
     Task<Work> Get(int id);
     Task<List<Work>> GetAll();
-    Task<double> GetTotalWorkHours(int id);
 }

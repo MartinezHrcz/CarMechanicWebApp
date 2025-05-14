@@ -1,6 +1,7 @@
 using Mechanic.Shared.Modells;
 using MechanicAPI.DB;
 using MechanicAPI.Interfaces;
+using MechanicAPI.Utils;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SQLitePCL;
@@ -40,6 +41,11 @@ public class WorkService : IWorkService
         old.LicensePlate = updateWork.LicensePlate;
         old.ProductionDate = updateWork.ProductionDate;
         old.WorkCategory = updateWork.WorkCategory;
+        old.TotalHours = WorkUtil.CalculateWorkHours(updateWork);
+        if ((int)old.Progress <= (int) updateWork.Progress)
+        {
+            old.Progress = updateWork.Progress;
+        } 
         await _context.SaveChangesAsync();
         _logger.LogInformation($"Updating work: from: {old}  to: {updateWork}");
         return true;
@@ -72,29 +78,6 @@ public class WorkService : IWorkService
     public async Task<double> GetTotalWorkHours(int id)
     {
         var work = await _context.Works.FindAsync(id);
-        double age = DateTime.Now.Year - work.ProductionDate;
-        
-        if (age > 0 && age < 5)
-        {
-            age = 0.5;
-        }
-        else if (age > 5 && age <= 10)
-        {
-            age = 1;
-        }
-        else if (age > 10 && age <= 20)
-        {
-            age = 1.5;
-        }
-        else if (age > 20)
-        {
-            age = 2;
-        }
-
-        double category = (int) work.WorkCategory;
-        double severity  = work.Severity ;
-        // just replace this with an if else, this is just unreadable gibreish
-        severity = work.Severity > 2 ? severity > 4 ? (severity > 7 ? (severity <= 9 ? 0.8 : 1 ) : 0.6  ) : 0.4 : 0.2;
-        return age * severity * category;
+        return 0;
     }
 }

@@ -16,7 +16,7 @@ namespace MechanicAPI.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.4");
 
-            modelBuilder.Entity("MechanicAPI.Classes.Client", b =>
+            modelBuilder.Entity("Mechanic.Shared.Modells.Client", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
@@ -39,7 +39,7 @@ namespace MechanicAPI.Migrations
                     b.ToTable("Clients");
                 });
 
-            modelBuilder.Entity("MechanicAPI.Classes.Work", b =>
+            modelBuilder.Entity("Mechanic.Shared.Modells.Work", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -52,12 +52,18 @@ namespace MechanicAPI.Migrations
                     b.Property<int>("ProductionDate")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("Progress")
+                        .HasColumnType("INTEGER");
+
                     b.Property<int>("Severity")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("ShortDescription")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<double>("TotalHours")
+                        .HasColumnType("REAL");
 
                     b.Property<int>("WorkCategory")
                         .HasColumnType("INTEGER");
@@ -72,9 +78,9 @@ namespace MechanicAPI.Migrations
                     b.ToTable("Works");
                 });
 
-            modelBuilder.Entity("MechanicAPI.Classes.Work", b =>
+            modelBuilder.Entity("Mechanic.Shared.Modells.Work", b =>
                 {
-                    b.HasOne("MechanicAPI.Classes.Client", "Client")
+                    b.HasOne("Mechanic.Shared.Modells.Client", "Client")
                         .WithMany()
                         .HasForeignKey("clientFK")
                         .OnDelete(DeleteBehavior.Cascade)
