@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "WebASM",
   "resources": {
-    "hash": "sha256-X9PdUt8Ns75/s88YSnrAhsBAK4l0Zf00V4K4QmP3F9w=",
+    "hash": "sha256-HXGsWWhAZkyl4zlKTusbF/FNtOnbV1f1T3XrQmSE0+I=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.gf26ou9jj9.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.v3fd2n5hlr.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -25,6 +25,7 @@
       "Microsoft.Extensions.Primitives.hkjc7m6x3e.wasm": "Microsoft.Extensions.Primitives.wasm",
       "Microsoft.JSInterop.uxfxoah9jv.wasm": "Microsoft.JSInterop.wasm",
       "Microsoft.JSInterop.WebAssembly.igj3a20jgi.wasm": "Microsoft.JSInterop.WebAssembly.wasm",
+      "SQLitePCLRaw.core.xkz8xl2v4t.wasm": "SQLitePCLRaw.core.wasm",
       "Microsoft.CSharp.zovhsua4hq.wasm": "Microsoft.CSharp.wasm",
       "Microsoft.VisualBasic.Core.m4iy4qjs8g.wasm": "Microsoft.VisualBasic.Core.wasm",
       "Microsoft.VisualBasic.gcchvdkxdm.wasm": "Microsoft.VisualBasic.wasm",
@@ -201,8 +202,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "WebASM.j6xp7wwrns.wasm": "WebASM.wasm",
-      "WebASM.7zl7g6w3rv.pdb": "WebASM.pdb"
+      "Mechanic.Shared.irjlznlw51.wasm": "Mechanic.Shared.wasm",
+      "Mechanic.Shared.m5jdnkald0.pdb": "Mechanic.Shared.pdb",
+      "WebASM.2fi813hkd2.wasm": "WebASM.wasm",
+      "WebASM.4zpaiho4v9.pdb": "WebASM.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.8bti36lthm.js": "sha256-HFADmT26AarHu4tMjFaTPxINmQjBJGtdPN+CKjtNMFE="
@@ -245,6 +248,7 @@
       "Microsoft.Extensions.Primitives.hkjc7m6x3e.wasm": "sha256-EQ2SeJgaUjRLYUVamIO8veqo0ULa8a/smS1fHkPruaY=",
       "Microsoft.JSInterop.uxfxoah9jv.wasm": "sha256-DmHnC9ymHQnTh0MVm4HX6gjjWpxkDYwTq2KqksxY+ZA=",
       "Microsoft.JSInterop.WebAssembly.igj3a20jgi.wasm": "sha256-vihRWdXryu7DS4JnQ9L0vQJYUdWnw355a300nvjPHZc=",
+      "SQLitePCLRaw.core.xkz8xl2v4t.wasm": "sha256-34SMrsayL0bhoZ4JGGWjN0gYAqZotemwzF8evivgz8Q=",
       "Microsoft.CSharp.zovhsua4hq.wasm": "sha256-sy5yldYD5Hx8ZUmlhDpZat7K/ty1N8K82PyPVohBG9k=",
       "Microsoft.VisualBasic.Core.m4iy4qjs8g.wasm": "sha256-uhOXvZ3qn4+UKnS5UwyF0rwxQaJZ56vKVYGMP3i7LWc=",
       "Microsoft.VisualBasic.gcchvdkxdm.wasm": "sha256-wKsJe36CN9gdroFlia57BFnoIUCJC1lCjFJxYddWNMc=",
@@ -412,10 +416,12 @@
       "WindowsBase.tuf34ieu7y.wasm": "sha256-Bd+l972cOS1eVeLzrQNlgD6LPWV1QXBSzJhv8Tx1WGI=",
       "mscorlib.5q5u0swn6q.wasm": "sha256-g9cI1sECkF7bxMqOSB+W0a4utdDsqTrqZzyiAEeA65g=",
       "netstandard.w8gk1pigg1.wasm": "sha256-QFR5QNPfvyZTexW3IA/AFx6ZmIF/TecvOUsSK4gM4po=",
-      "WebASM.j6xp7wwrns.wasm": "sha256-Oxv0f8L/8XNZlNa7ScOyOrCeFV+MDz0hAUg1muP0mUs="
+      "Mechanic.Shared.irjlznlw51.wasm": "sha256-spkdB88LGOakX9TkBegBkbNCo3OlGI3rd8K10PxZvSA=",
+      "WebASM.2fi813hkd2.wasm": "sha256-wlP+tVGWVdCPd+e/tFgeelX/O/7rdAQtcWBlUER6Pd4="
     },
     "pdb": {
-      "WebASM.7zl7g6w3rv.pdb": "sha256-/eysYkXMH8CJo2RFfGAGIna2cLqHjyd+zcTik0zv6Vc="
+      "Mechanic.Shared.m5jdnkald0.pdb": "sha256-OsnaSztGRzBWKEBHyrmuvqFOb6XfFnMSCHZ3knVde8w=",
+      "WebASM.4zpaiho4v9.pdb": "sha256-AKgQTwiSMZzv8thfaZuBSCmMPHKKP0AwrpJ4uiAGtFw="
     }
   },
   "cacheBootResources": true,

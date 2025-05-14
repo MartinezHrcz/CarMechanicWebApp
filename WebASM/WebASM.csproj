@@ -18,9 +18,5 @@
     <ItemGroup>
         <ProjectReference Include="..\Mechanic.Shared\Mechanic.Shared.csproj" />
     </ItemGroup>
-    
-    <ItemGroup>
-      <Folder Include="Services\" />
-    </ItemGroup>
 
 </Project>
