@@ -21,6 +21,7 @@ public class WorkService : IWorkService
 
     public async Task<ActionResult<Work>> Add(Work work)
     {
+        work.TotalHours = WorkUtil.CalculateWorkHours(work);
         _context.Works.Add(work);
         await _context.SaveChangesAsync();
         _logger.LogInformation($"Work added {work}");

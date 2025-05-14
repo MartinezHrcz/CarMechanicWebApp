@@ -33,9 +33,9 @@ public class Program
         
         builder.Services.AddCors(options =>
         {
-            options.AddPolicy("AllowBlazorApp", policy =>
+            options.AddPolicy("AllowAll", policy =>
             {
-                policy.WithOrigins("http://localhost:5252") // <-- Your Blazor WebAssembly URL
+                policy.AllowAnyOrigin()
                     .AllowAnyHeader()
                     .AllowAnyMethod();
             });
@@ -48,7 +48,7 @@ public class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
-        app.UseCors("AllowBlazorApp");
+        app.UseCors("AllowAll");
         app.UseHttpsRedirection();
         
         app.MapControllers();

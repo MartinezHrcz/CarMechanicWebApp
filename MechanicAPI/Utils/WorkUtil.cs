@@ -7,7 +7,7 @@ public class WorkUtil
     public static double CalculateWorkHours(Work work)
     {
         double age = DateTime.Now.Year - work.ProductionDate;
-        
+        Console.WriteLine($"AGE: {age}");
         if (age > 0 && age < 5)
         {
             age = 0.5;
@@ -26,6 +26,7 @@ public class WorkUtil
         }
 
         double category = (int) work.WorkCategory;
+        
 
         double severity;
         
@@ -49,6 +50,8 @@ public class WorkUtil
         {
             severity = 1.0;
         }
+
+        Console.WriteLine($"{age}, {category}, {severity}");
         
         return age * severity * category;
         

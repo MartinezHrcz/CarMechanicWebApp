@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MechanicAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcdbe23d6857862abdbc870ca1ef8b0f3e56d955")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c3aaae0000f580d4dbb9ebf94748dcb1db8960e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("MechanicAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MechanicAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
