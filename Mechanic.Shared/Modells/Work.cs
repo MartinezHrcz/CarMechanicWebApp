@@ -41,5 +41,10 @@ public class Work
     private int severity;
     public int Severity { get => severity; set => severity = value; }
     
+    public ProgressValues? Progress { get; set; } = 0;
+    
+    //ToDo: do it like this or remove
+    public int TotalHours { get; set; }
+    
     
 } 

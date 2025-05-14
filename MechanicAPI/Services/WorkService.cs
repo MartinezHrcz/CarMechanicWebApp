@@ -69,7 +69,7 @@ public class WorkService : IWorkService
         return await _context.Works.ToListAsync();
     }
 
-    public async Task<ActionResult<double>> GetTotalWorkHours(int id)
+    public async Task<double> GetTotalWorkHours(int id)
     {
         var work = await _context.Works.FindAsync(id);
         double age = DateTime.Now.Year - work.ProductionDate;
