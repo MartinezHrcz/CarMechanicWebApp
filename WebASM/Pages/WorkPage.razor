@@ -17,17 +17,23 @@
 <table class="table table-striped">
     <thead>
     <tr>
+        <th>ID</th>
+        <th>Client ID</th>
         <th>License Plate</th>
         <th>Production Date</th>
         <th>Category</th>
         <th>Severity</th>
         <th>Description</th>
+        <th>Progress</th>
+        <th>Estimated Total Hours</th>
     </tr>
     </thead>
     <tbody>
     @foreach (var work in workList)
     {
         <tr>
+            <td>@work.Id</td>
+            <td>@work.Client.id</td>
             <td>@work.LicensePlate</td>
             <td>@work.ProductionDate</td>
             <td>@work.WorkCategory</td>

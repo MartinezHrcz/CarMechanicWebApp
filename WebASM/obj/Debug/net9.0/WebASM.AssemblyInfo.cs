@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebASM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+888d25551428abdc01cffa75ca58b80d412a07b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf47117c04ba87fc0640c0a01552aab6c4abc148")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebASM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebASM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
