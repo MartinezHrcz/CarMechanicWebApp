@@ -14,7 +14,10 @@ public class ClientService : IClientService
 
     public async Task<List<Client>> GetClientsAsync()
     {
-        return (await _httpClient.GetFromJsonAsync<List<Client>>("client"))!;
+        var response =  await _httpClient.GetFromJsonAsync<List<Client>>("client");
+        Console.WriteLine(response.ToList());
+        return response;
+        
     }
 
     public async Task<Client> GetClientByIdAsync(int id)

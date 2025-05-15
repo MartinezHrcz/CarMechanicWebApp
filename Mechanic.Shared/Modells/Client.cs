@@ -6,7 +6,6 @@ namespace Mechanic.Shared.Modells;
 
 public class Client
 {
-    [JsonIgnore]
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int id { get; set; }

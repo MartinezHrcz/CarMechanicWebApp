@@ -7,7 +7,6 @@ namespace Mechanic.Shared.Modells;
 public class Work
 {
     
-    [JsonIgnore]
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }

@@ -4,6 +4,7 @@ using MechanicAPI.Interfaces;
 using MechanicAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using SQLitePCL;
 
 namespace MechanicAPI.Controllers;
 [ApiController]
@@ -20,7 +21,8 @@ public class ClientController : ControllerBase
     public async Task<ActionResult<List<Client>>> GetAll()
     {
         var clients = await _clientService.GetAll();
-        return Ok(clients);
+        clients.Value.ForEach(c=>Console.WriteLine(c.id));
+        return clients;
     }
 
     [HttpPost]
