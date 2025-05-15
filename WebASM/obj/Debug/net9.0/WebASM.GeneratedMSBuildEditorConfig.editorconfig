@@ -32,16 +32,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50UGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/ClientSubPages/ClientAdd.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50U3ViUGFnZXNcQ2xpZW50QWRkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/ClientSubPages/ClientUpdate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50U3ViUGFnZXNcQ2xpZW50VXBkYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/SubPages/WorkAdd.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViUGFnZXNcV29ya0FkZC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/WorkPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya1BhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/WorkSubPages/WorkAdd.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya1N1YlBhZ2VzXFdvcmtBZGQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/WorkSubPages/WorkUpdate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya1N1YlBhZ2VzXFdvcmtVcGRhdGUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/_Imports.razor]

@@ -1,8 +1,45 @@
 @page "/WorkAdd"
+
+@using Mechanic.Shared.Modells
+@using WebASM.Services
+@inject IWorkService WorkService
 <h3>WorkAdd</h3>
 
 <h1>!ADD NEW WORK HERE!</h1>
-PLACE HOLDER TEXT
+
+<!--Client (make it into dropdown)--> 
+<label>[PlaceHold]</label>
+<input type="text" placeholder="PlaceHolder">
+<!--License plate-->
+<label>[PlaceHold]</label>
+<input type="text" placeholder="PlaceHolder">
+<!--Production date-->
+<label>[PlaceHold]</label>
+<input type="text" placeholder="PlaceHolder">
+<!--Short desc -->
+<label>[PlaceHold]</label>
+<input type="text" placeholder="PlaceHolder">
+<!--Category (make it into dropdown)-->
+<label>[PlaceHold]</label>
+<input type="text" placeholder="PlaceHolder">
+<!--Severity (make it adder)-->
+<label>[PlaceHold]</label>
+<input type="text" placeholder="PlaceHolder">
+
+
+<button @onclick="Addnew">ADD NEW</button>
 @code {
+    //data, progress should be allways default to the first enum (0)
+    int clientKey;
+    string licensePlate;
+    int prodDate;
+    string shortDesc;
+    int severity;
     
+    //for api call
+    public async void Addnew()
+    {
+
+    }
+
 }
