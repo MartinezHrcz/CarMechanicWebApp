@@ -1,7 +1,46 @@
 @page "/ClientPage"
-<h3>ClientPage</h3>
+@using Mechanic.Shared.Modells
+@using WebASM.Services
+@inject IClientService ClientService
 
+<h3>Client</h3>
+
+<div class="d-flex justify-content-start mb-4 gap-2">
+    <NavLink class="btn btn-primary" href="ClientAdd">Add New</NavLink>
+    <NavLink class="btn btn-warning" href="ClientUpdate">Update</NavLink>
+    <NavLink class="btn btn-danger" href="#">Delete</NavLink>
+</div>
+
+<table class="table table-striped">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var client in clientList)
+    {
+        <tr>
+            <td>@client.id</td>
+            <td>@client.Name</td>
+            <td>@client.Email</td>
+            <td>@client.Address</td>
+        </tr>
+    }
+    </tbody>
+</table>
 
 @code {
-        
+
+    private List<Client> clientList = new List<Client>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        clientList = await ClientService.GetClientsAsync();
+    }
+
+
 }

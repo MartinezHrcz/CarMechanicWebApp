@@ -1,6 +1,56 @@
 @page "/ClientAdd"
+@using Mechanic.Shared.Modells
+@using WebASM.Services
 <h3>ClientAdd</h3>
+@inject IClientService ClientService
 
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+
+            <!-- Name -->
+            <div class="mb-3">
+                <label for="name" class="form-label" >Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Name here" @bind="Name" />
+            </div>
+
+            <!-- Email -->
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" @bind="Email"/>
+            </div>
+
+            <!-- Address -->
+            <div class="mb-3">
+                <label for="address" class="form-label">Address</label>
+                <input type="text" id="address" class="form-control" placeholder="e.g. Hajnal utca 6." @bind="Address" />
+            </div>
+            
+            <button class="btn btn-primary" @onclick="Addnew" >Make new Client</button>
+
+        </div>
+    </div>
+</div>
 @code {
-    
+    string Name;
+    string Email;
+    string Address;
+
+    private void Addnew()
+    {
+        try
+        {
+            Client client = new Client();
+            client.Name = Name;
+            client.Email= Email;
+            client.Address = Address;
+            ClientService.AddClientAsync(client);
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine("bad input");
+            throw;
+        }
+    }
+
 }
