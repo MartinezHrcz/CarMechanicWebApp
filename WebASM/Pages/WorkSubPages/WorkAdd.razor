@@ -55,11 +55,10 @@
                     }
                 </select>
             </div>
-
             <!-- Severity -->
             <div class="mb-3">
-                <label for="severity" class="form-label" @bind="severity">Severity</label>
-                <input type="number" id="severity" class="form-control" min="1" max="10"  />
+                <label for="severity" class="form-label" >Severity</label>
+                <input type="number" id="severity" class="form-control" min="1" max="10" @bind="severity" />
             </div>
 
             <button class="btn btn-primary" @onclick="Addnew" >Add Work</button>

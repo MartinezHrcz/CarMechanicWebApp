@@ -14,7 +14,7 @@
     <NavLink class="btn btn-danger" href="#">Delete</NavLink>
 </div>
 
-<table class="table table-striped">
+<table class="table table-dark table-striped-columns">
     <thead>
     <tr>
         <th>ID</th>
@@ -40,7 +40,7 @@
             <td>@work.Severity</td>
             <td>@work.ShortDescription</td>
             <td>@work.Progress</td>
-            <td>@work.TotalHours</td>
+            <td>@Math.Ceiling(work.TotalHours)</td>
         </tr>
     }
     </tbody>
@@ -52,7 +52,8 @@
 
     protected override async Task OnInitializedAsync()
     {
-        workList = await WorkService.GetWorksAsync();
+        workList = await WorkService.GetWorksAsync(); 
+        
     }
     
 

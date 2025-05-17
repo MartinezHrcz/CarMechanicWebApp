@@ -1,6 +1,189 @@
 @page "/WorkUpdate"
-<h3>WorkUpdate</h3>
+
+@using Mechanic.Shared.Modells
+@using WebASM.Services
+@inject IWorkService WorkService
+@inject IClientService ClientService
+@inject IJSRuntime JS
+
+<h3>WorkAdd</h3>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+
+            <!-- Work Selector -->
+            <div class="mb-3">
+                <label for="workselect" class="form-label">Select Work to be updated</label>
+                <select class="form-select" id="workselect" @onchange="SelectWork">
+                    <option disabled selected value="" >-- Choose a Work --</option>
+                    @if (works.Count > 0)
+                    {
+                        @foreach (var work in works)
+                        {
+                            <option value="@work.Id">@work.Id, @work.LicensePlate</option>
+                        }
+                    }
+                </select>
+            </div>
+
+            <!-- License Plate -->
+            <div class="mb-3">
+                
+                <label for="licensePlate" class="form-label">License Plate
+                    (current:
+                    @if (!old.Equals(null))
+                    {
+                        @old.LicensePlate
+                    }
+                    )
+                </label>
+                <input type="text" id="licensePlate" class="form-control" placeholder="ABC-123" @bind="licensePlate"/>
+            </div>
+
+            <!-- Production Date -->
+            <div class="mb-3">
+                <label for="productionDate" class="form-label">Production Date (current: @if (!@old.Equals(null)) { @old.ProductionDate})
+                </label>
+                <input type="number" id="productionDate" class="form-control" min="1900" @bind="prodDate"/>
+            </div>
+
+            <!-- Short Description -->
+            <div class="mb-3">
+                <label for="description" class="form-label">Short Description</label>
+                <p>
+                    (current:
+                    @if (!old.Equals(null))
+                    {
+                        @old.ShortDescription
+                    }
+                    )
+                </p>
+                <input type="text" id="description" class="form-control" placeholder="e.g. Oil change" @bind="shortDesc" />
+            </div>
+
+            <!-- Category Dropdown -->
+            <div class="mb-3">
+                <label for="category" class="form-label">Work Category (current: @if (!old.Equals(null))
+                                                                       {
+                                                                            @old.WorkCategory
+                                                                       }) 
+                </label>
+                <select class="form-select" id="category" @bind="category">
+                    <option disabled selected value="0">-- Choose category --</option>
+                    @foreach (var category in Enum.GetValues<WorkCategories>())
+                    {
+                        <option value="@category">@category</option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="severity" class="form-label" >Progress</label>
+                <select class="form-select" id="workselect" @bind="progress">
+                    <option disabled selected value="0" >-- @if (!old.Equals(null))
+                                                            {
+                                                                
+                                                            }
+                                                            else
+                                                            {
+                                                                @ProgressValues.FELVETT_MUNKA;
+                                                            }
+                        --</option>
+                    @if (old.Progress.Equals(ProgressValues.FELVETT_MUNKA))
+                    {
+                        <option value="1">In progress</option>
+                    }
+                    @if (old.Progress.Equals(ProgressValues.ELVÉGZÉS_ALATT))
+                    {
+                        <option value="2">Done</option>
+                    }
+                    
+                </select>
+            </div>
+            
+            <!-- Severity -->
+            <div class="mb-3">
+                <label for="severity" class="form-label" >Severity (current: 
+                    @if(!old.Equals(null))
+                    {
+                        @old.Severity
+                    }
+                    )
+                </label>
+                <input type="number" id="severity" class="form-control" min="1" max="10" @bind="severity" />
+            </div>
+
+            <button class="btn btn-primary" @onclick="Addnew" >Add Work</button>
+
+        </div>
+    </div>
+</div>
 
 @code {
-    
+
+
+    //data, progress should be always default to the first enum (0)
+    int selectedWork;
+    string licensePlate;
+    int prodDate;
+    string shortDesc;
+    int severity;
+    string progress;
+    Work old = new Work();
+    WorkCategories category;
+
+    List<Work> works = new List<Work>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        works = await WorkService.GetWorksAsync();
+    }
+
+    public async void Addnew()
+    {
+        if (!works.Select(x=>x.Id).Contains(selectedWork))
+        {
+            return;
+        }
+        if (licensePlate.Length == 7)
+        {
+            old.LicensePlate = licensePlate;
+        }
+
+        if (shortDesc.Trim().Length > 0)
+        {
+            old.ShortDescription = shortDesc;
+        }
+
+        if (severity <= 10 && severity > 0)
+        {
+            old.Severity = severity;
+        }
+
+        if (prodDate > 1900)
+        {
+            old.ProductionDate = prodDate;
+        }
+
+        if (progress != "0")
+        {
+            old.Progress = (ProgressValues)int.Parse(progress);
+        }
+        await WorkService.UpdateWorkAsync(selectedWork,old);
+        await JS.InvokeVoidAsync("history.back");
+    }
+
+    private async void SelectWork(ChangeEventArgs e)
+    {
+        if (e.Value is null)
+        {
+            return;
+        }
+        selectedWork = int.Parse(e.Value.ToString());
+        old = (await WorkService.GetWorkByIdAsync(selectedWork));
+        Console.WriteLine(old.WorkCategory);
+        StateHasChanged();
+    }
+
+
 }
