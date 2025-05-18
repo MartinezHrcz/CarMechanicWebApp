@@ -65,9 +65,14 @@
         short result;
         if (Int16.TryParse(searchById, out result))
         {
-            await WorkService.DeleteWorkAsync(result);
+            if (workList.Select(x=>x.Id).Contains(result))
+            {
+                await WorkService.DeleteWorkAsync(result);
+                workList = await WorkService.GetWorksAsync();
+                StateHasChanged();
+            }
         }
-        StateHasChanged();
+      
     }
 
 }

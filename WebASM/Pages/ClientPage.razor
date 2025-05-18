@@ -8,7 +8,8 @@
 <div class="d-flex justify-content-start mb-4 gap-2">
     <NavLink class="btn btn-primary" href="ClientAdd">Add New</NavLink>
     <NavLink class="btn btn-warning" href="ClientUpdate">Update</NavLink>
-    <NavLink class="btn btn-danger" href="#">Delete</NavLink>
+    <button class="btn btn-danger" onclick="@DeleteById">Delete</button>
+    <input class="form-control-sm bg-light-subtle border-danger" placeholder="Delete by id" @bind="selectById">
 </div>
 
 <table class="table table-striped">
@@ -35,6 +36,7 @@
 
 @code {
 
+    string selectById = "";
     private List<Client> clientList = new List<Client>();
 
     protected override async Task OnInitializedAsync()
@@ -42,5 +44,19 @@
         clientList = await ClientService.GetClientsAsync();
     }
 
+    private async void DeleteById()
+    {
+        short result;
+        selectById = selectById.Trim();
+        if (Int16.TryParse(selectById, out result) )
+        {
+            if (clientList.Select(x => x.id).Contains(result))
+            {
+                await ClientService.DeleteClientAsync(result);
+                clientList = await ClientService.GetClientsAsync();
+                StateHasChanged();
+            }
+        }
+    }
 
 }
