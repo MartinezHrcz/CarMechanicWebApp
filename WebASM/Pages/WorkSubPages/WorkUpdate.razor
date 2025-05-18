@@ -180,7 +180,6 @@
         }
         selectedWork = int.Parse(e.Value.ToString());
         old = (await WorkService.GetWorkByIdAsync(selectedWork));
-        Console.WriteLine(old.WorkCategory);
         StateHasChanged();
     }
 

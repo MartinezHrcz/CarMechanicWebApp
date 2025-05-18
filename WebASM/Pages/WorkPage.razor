@@ -5,13 +5,15 @@
 <h3>WorkPage</h3>
 
 <div class="mb-3">
-    <input class="form-control" placeholder="Search by license plate..." onchange="" />
+    <input class="form-control" placeholder="Search by license plate..." @bind="searchByPlate" />
+
 </div>
 
 <div class="d-flex justify-content-start mb-4 gap-2">
-    <NavLink class="btn btn-primary" href="WorkAdd">Add New</NavLink>
-    <NavLink class="btn btn-warning" href="WorkUpdate">Update</NavLink>
-    <NavLink class="btn btn-danger" href="#">Delete</NavLink>
+    <NavLink class="btn btn-primary btn-lg" href="WorkAdd">Add New</NavLink>
+    <NavLink class="btn btn-warning btn-lg" href="WorkUpdate">Update</NavLink>
+    <button class="btn btn-danger btn-lg" onclick="@DeleteWork" >Delete</button>
+    <input class="form-control-sm bg-light-subtle border-danger" placeholder="Delete by id" @bind="searchById">
 </div>
 
 <table class="table table-dark table-striped-columns">
@@ -29,7 +31,7 @@
     </tr>
     </thead>
     <tbody>
-    @foreach (var work in workList)
+    @foreach (var work in workList.Where(x=>x.LicensePlate.StartsWith(searchByPlate)))
     {
         <tr>
             <td>@work.Id</td>
@@ -49,12 +51,23 @@
 @code {
 
     private List<Work> workList = new List<Work>();
+    string searchByPlate = "";
+    string searchById = "";
 
     protected override async Task OnInitializedAsync()
     {
-        workList = await WorkService.GetWorksAsync(); 
-        
+        workList = await WorkService.GetWorksAsync();
     }
-    
+
+    private async void DeleteWork()
+    {
+        searchById = searchById.Trim();
+        short result;
+        if (Int16.TryParse(searchById, out result))
+        {
+            await WorkService.DeleteWorkAsync(result);
+        }
+        StateHasChanged();
+    }
 
 }
