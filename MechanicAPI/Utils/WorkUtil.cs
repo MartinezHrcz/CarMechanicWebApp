@@ -7,20 +7,19 @@ public class WorkUtil
     public static double CalculateWorkHours(Work work)
     {
         double age = DateTime.Now.Year - work.ProductionDate;
-        Console.WriteLine($"AGE: {age}");
-        if (age > 0 && age < 5)
+        if (age >= 0 && age < 5)
         {
             age = 0.5;
         }
-        else if (age > 5 && age <= 10)
+        else if (age >= 5 && age <= 10)
         {
             age = 1;
         }
-        else if (age > 10 && age <= 20)
+        else if (age >= 10 && age < 20)
         {
             age = 1.5;
         }
-        else if (age > 20)
+        else if (age >= 20)
         {
             age = 2;
         }
@@ -50,8 +49,6 @@ public class WorkUtil
         {
             severity = 1.0;
         }
-
-        Console.WriteLine($"{age}, {category}, {severity}");
         
         return age * severity * category;
         
