@@ -40,16 +40,12 @@ public class ClientService : IClientService
 
     public async Task<bool> Update(int _id,Client updateClient)
     {
-        var old = await _context.Clients.FindAsync(updateClient);
-        if (old.Equals(null))
+        var old = await _context.Clients.FindAsync(_id);
+        if (old is null)
         {
             return false;
         }
-
-        if (_id != updateClient.id)
-        {
-            return false;
-        }
+        
         old.Name = updateClient.Name;
         old.Email = updateClient.Email;
         old.Address = updateClient.Address;
