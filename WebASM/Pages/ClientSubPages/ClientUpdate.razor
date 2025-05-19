@@ -3,8 +3,9 @@
 @using WebASM.Services
 @inject IClientService ClientService
 @inject IJSRuntime JS
-
-<h3>Client work</h3>
+@inject NavigationManager Navigator
+<link href="css/mechanic.css" rel="stylesheet" />
+<h3>Update client data</h3>
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-6">
@@ -29,7 +30,7 @@
 
                 <label for="name" class="form-label">Name
                     (current:
-                    @if (!old.Equals(null))
+                    @if (!old.Equals(new Client()))
                     {
                         @old.Name
                     }
@@ -40,7 +41,7 @@
 
             <!-- Email -->
             <div class="mb-3">
-                <label for="email" class="form-label">Email (current: @if (!old.Equals(null)) { @old.Email})
+                <label for="email" class="form-label">Email (current: @if (!old.Equals(new Client())) { @old.Email})
                 </label>
                 <input type="email" id="email" class="form-control" placeholder="xyz@gmail.com" @bind="Email"/>
             </div>
@@ -77,6 +78,7 @@
     protected override async Task OnInitializedAsync()
     {
         clients = await ClientService.GetClientsAsync();
+        StateHasChanged();
     }
 
     public async void UpdateClient()
@@ -103,7 +105,7 @@
 
         await ClientService.UpdateClientAsync(selectedClient, old);
         
-        await JS.InvokeVoidAsync("history.back");
+        Navigator.NavigateTo("/ClientPage");
     }
 
     private async void SelectClient(ChangeEventArgs e)
@@ -114,7 +116,8 @@
         }
         
         selectedClient = int.Parse(e.Value.ToString());
-        old = (await ClientService.GetClientByIdAsync(selectedClient));
+        old = await ClientService.GetClientByIdAsync(selectedClient);
+
         StateHasChanged();
     }
 

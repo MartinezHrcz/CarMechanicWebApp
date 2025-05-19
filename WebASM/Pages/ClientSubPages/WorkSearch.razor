@@ -1,0 +1,64 @@
+@page "/WorkSearch"
+@using Mechanic.Shared.Modells
+@using WebASM.Services
+@inject IClientService ClientService
+@inject IWorkService WorkService
+<h3>Show work for client</h3>
+<link href="css/mechanic.css" rel="stylesheet" />
+<div class="mb-3">
+    <label for="clientselect" class="form-label">Clients:</label>
+    <select class="form-select" id="clientselect" @bind="clientID">
+        <option disabled selected value="" >-- Choose a client --</option>
+        @foreach (var client in _clients)
+        {
+            <option value="@client.id">@client.id, @client.Name</option>
+        }
+    </select>
+</div>
+
+<table class="table table-dark table-striped-columns">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Client ID</th>
+        <th>License Plate</th>
+        <th>Production Date</th>
+        <th>Category</th>
+        <th>Severity</th>
+        <th>Description</th>
+        <th>Progress</th>
+        <th>Estimated Total Hours</th>
+    </tr>
+    </thead>
+    <tbody>
+        @foreach (var work in _works.Where(x => x.clientFK == clientID))
+        {
+            <tr>
+                <td>@work.Id</td>
+                <td>@work.clientFK</td>
+                <td>@work.LicensePlate</td>
+                <td>@work.ProductionDate</td>
+                <td>@work.WorkCategory</td>
+                <td>@work.Severity</td>
+                <td>@work.ShortDescription</td>
+                <td>@work.Progress</td>
+                <td>@Math.Ceiling(work.TotalHours)</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    int clientID= 0;
+    List<Client> _clients = new List<Client>();
+    List<Work> _works = new List<Work>();
+    
+    protected override async void OnInitialized()
+    {
+        _clients = await ClientService.GetClientsAsync();
+        _works = await WorkService.GetWorksAsync();
+        StateHasChanged();
+    }
+    
+
+}

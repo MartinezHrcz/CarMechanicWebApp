@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50U3ViUGFnZXNcQ2xpZW50VXBkYXRlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/ClientSubPages/WorkSearch.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50U3ViUGFnZXNcV29ya1NlYXJjaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/hercz/RiderProjects/CarMechanicWebAppNew/WebASM/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

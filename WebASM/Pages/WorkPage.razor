@@ -1,8 +1,10 @@
 @page "/WorkPage"
 @inject IWorkService WorkService
 @using Mechanic.Shared.Modells
+
 @using WebASM.Services
-<h3>WorkPage</h3>
+<link href="css/mechanic.css" rel="stylesheet" />
+<h3>Job Manager</h3>
 
 <div class="mb-3">
     <input class="form-control" placeholder="Search by license plate..." @bind="searchByPlate" />
@@ -10,9 +12,9 @@
 </div>
 
 <div class="d-flex justify-content-start mb-4 gap-2">
-    <NavLink class="btn btn-primary btn-lg" href="WorkAdd">Add New</NavLink>
-    <NavLink class="btn btn-warning btn-lg" href="WorkUpdate">Update</NavLink>
-    <button class="btn btn-danger btn-lg" onclick="@DeleteWork" >Delete</button>
+    <NavLink class="btn btn-primary btn-lg" href="WorkAdd">➕ Add Work</NavLink>
+    <NavLink class="btn btn-warning btn-lg" href="WorkUpdate">✏️ Update</NavLink>
+    <button class="btn btn-danger btn-lg" onclick="@DeleteWork">🗑️ Delete</button>
     <input class="form-control-sm bg-light-subtle border-danger" placeholder="Delete by id" @bind="searchById">
 </div>
 
@@ -42,7 +44,7 @@
             <td>@work.Severity</td>
             <td>@work.ShortDescription</td>
             <td>@work.Progress</td>
-            <td>@Math.Ceiling(work.TotalHours)</td>
+            <td>@Math.Round(work.TotalHours,2)</td>
         </tr>
     }
     </tbody>

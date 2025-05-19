@@ -1,9 +1,10 @@
 @page "/ClientAdd"
 @using Mechanic.Shared.Modells
 @using WebASM.Services
-<h3>ClientAdd</h3>
+@inject NavigationManager Navigator
+<h3>Add Client</h3>
 @inject IClientService ClientService
-
+<link href="css/mechanic.css" rel="stylesheet" />
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-6">
@@ -45,10 +46,10 @@
             client.Email= Email;
             client.Address = Address;
             ClientService.AddClientAsync(client);
+            Navigator.NavigateTo("/ClientPage");
         }
         catch (Exception e)
         {
-            Console.WriteLine("bad input");
             throw;
         }
     }

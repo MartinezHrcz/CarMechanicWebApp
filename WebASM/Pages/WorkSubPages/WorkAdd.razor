@@ -4,9 +4,9 @@
 @using WebASM.Services
 @inject IWorkService WorkService
 @inject IClientService ClientService
-
-
-<h3>WorkAdd</h3>
+@inject NavigationManager Navigator
+<link href="css/mechanic.css" rel="stylesheet" />
+<h3>Add job</h3>
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-6">
@@ -97,7 +97,7 @@
         work.ShortDescription = shortDesc;
         work.WorkCategory = category;
         await WorkService.AddWorkAsync(work);
-        
+        Navigator.NavigateTo("/WorkPage");
     }
 
 }

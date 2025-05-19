@@ -1,0 +1,68 @@
+body {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+input.form-control,
+input.form-control-sm {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+input.form-control::placeholder,
+input.form-control-sm::placeholder {
+    color: #aaa;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #3a3f44;
+    border: 1px solid #5e5e5e;
+    color: #d1ecf1;
+}
+
+.btn-warning {
+    background-color: #8c7f3f;
+    border: 1px solid #a58f44;
+    color: #fff3cd;
+}
+
+.btn-danger {
+    background-color: #7a1e1e;
+    border: 1px solid #a12c2c;
+    color: #f8d7da;
+}
+
+.btn-lg {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.table-dark {
+    background-color: #2b2b2b;
+    color: #ddd;
+}
+
+.table-dark th {
+    background-color: #3b3b3b;
+    color: #eee;
+}
+
+.table-dark td {
+    background-color: #2a2a2a;
+    border-top: 1px solid #444;
+}
+
+h3 {
+    color: #d6d6d6;
+    border-bottom: 2px solid #5e5e5e;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+input.bg-light-subtle.border-danger {
+    background-color: #2e2e2e !important;
+    border: 1px solid #ff4e4e !important;
+    color: #fff;
+}

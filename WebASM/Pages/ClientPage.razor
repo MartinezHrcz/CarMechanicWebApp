@@ -2,17 +2,21 @@
 @using Mechanic.Shared.Modells
 @using WebASM.Services
 @inject IClientService ClientService
+<link href="css/mechanic.css" rel="stylesheet" />
 
-<h3>Client</h3>
+<h3>Client Manager</h3>
 
 <div class="d-flex justify-content-start mb-4 gap-2">
-    <NavLink class="btn btn-primary" href="ClientAdd">Add New</NavLink>
-    <NavLink class="btn btn-warning" href="ClientUpdate">Update</NavLink>
-    <button class="btn btn-danger" onclick="@DeleteById">Delete</button>
+    <NavLink class="btn btn-primary" href="ClientAdd">➕ Add New</NavLink>
+    <NavLink class="btn btn-warning" href="ClientUpdate">✏️ Update</NavLink>
+    <button class="btn btn-danger" onclick="@DeleteById">🗑️ Delete</button>
     <input class="form-control-sm bg-light-subtle border-danger" placeholder="Delete by id" @bind="selectById">
 </div>
+<div class="d-flex justify-content-start mb-4">
+    <NavLink class="btn btn-success" href="WorkSearch">Search jobs by client</NavLink>
+</div>
 
-<table class="table table-striped">
+<table class="table table-dark table-striped-columns">
     <thead>
     <tr>
         <th>ID</th>
@@ -42,6 +46,7 @@
     protected override async Task OnInitializedAsync()
     {
         clientList = await ClientService.GetClientsAsync();
+        StateHasChanged();
     }
 
     private async void DeleteById()
